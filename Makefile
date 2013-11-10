@@ -10,12 +10,7 @@ test-app-ci:
 	echo 'No test to run for this project'
 
 setup-app:
-	echo 'No configuration to setup for this project'
 	git remote add stubulator01 git@heroku.com:anbu-core-stub01.git
-
-setup-heroku:
-	heroku apps:create --remote stubulator01 --app anbu-core-stub01
-	heroku config:add APP_ENV=stubulator01   --app anbu-core-stub01
 
 .PHONY: no_targets__ list
 no_targets__:
