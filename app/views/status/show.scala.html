@@ -1,0 +1,15 @@
+@(status: Map[String, String])
+
+@admin("anbu Core-Stubulator Status") {
+  <h2>anbu Core-Stubulator Status</h2>
+
+  <table>
+    <h4>Endpoints</h4>
+    @status.map { case(key, value) =>
+      <tr class="table table-bordered table-striped table-hover table-condensed">
+        <td><strong>@key</strong></td>
+        <td>@value</td>
+      </tr>
+    }
+  </table>
+}
