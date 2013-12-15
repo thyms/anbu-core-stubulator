@@ -2,6 +2,8 @@ script: git checkout develop && make test-app-ci
 deploy:
   provider: heroku
   api_key:
-    secure: FY2SGovCMFIYXe1U2+4ooNecAuT/ra208eQr6XK703wy/X2hakd8d3b0YAPDzFvTB47erKnlix64S/Hy7+aPDz2x9Sq/TD5k+z3KODH6lNrw2IdGuOBPZRGjWu6Sv/oQOyJhX38DbXNTy/kNuMTRmYkwgWqrKM8rKeRe/BN06lU=
-  app:
-    develop: anbu-core-stub01
+    secure: INhqpYw+nCbCr5Qjm4pRPEkNWSwLFnPEBeoX9QgsX/36iBC7XWqbAydLeMAwCpkdiAUoflhebZyjk6PGYqdPM7/V2oXdKnjt6ckhLGAWDxwFYNMUcg2FYmlQbu+s0Y/6yGq/N7qMCvAgxPIrWTyxQRVB8FPU2EeMbSL2pnbAXJ4=
+  app: anbu-core-stub01
+  on:
+    repo: thyms/anbu-core-stubulator
+    branch: develop
